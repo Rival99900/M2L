@@ -16,7 +16,7 @@ SELECT
     t.libelle AS type,
     p.nom AS parent
 FROM MATERIEL m
-JOIN TYPE t ON m.idType = t.idType
+JOIN TYPEE t ON m.idType = t.idType
 LEFT JOIN MATERIEL p ON m.idParent = p.idMateriel
 ORDER BY m.idMateriel;
 ";
@@ -67,4 +67,5 @@ $materiels = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </table>
 
 </body>
+
 </html>
