@@ -28,6 +28,7 @@ $materiels = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <!DOCTYPE html>
 <html lang='fr'>
 <head>
+    <link rel="icon" type="image/png" href="Logo.png">
     <meta charset='UTF-8'>
     <title>Parc matériel</title>
     <style>
@@ -69,3 +70,4 @@ $materiels = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </body>
 
 </html>
+
